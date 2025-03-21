@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Spotify Deck</title>
 </head>
 <body>
     <!-- Header -->
@@ -15,31 +15,33 @@
                 <span></span>
                 <span></span>
             </button>
+            <h1>Spotify Deck</h1>
             <ul>
-                <li><a href="/" class="active">Accueil</a></li>
-                <li><a href="">link 1</a></li>
-                <li><a href="">link 2</a></li>
-                <li><a href="">link 3</a></li>
-                <li><a href="">link 4</a></li>
+                <li><a href="/" class="active">Home</a></li>
+                <li><a href="">History</a></li>
             </ul>
         </nav>
 
         <nav class="sidebar" id="sidebar">
             <ul>
-                <li><a href="/" class="active">Accueil</a></li>
-                <li><a href="">link 1</a></li>
-                <li><a href="">link 2</a></li>
-                <li><a href="">link 3</a></li>
-                <li><a href="">link 4</a></li>
+                <li><a href="/" class="active">Home</a></li>
+                <li><a href="">History</a></li>
             </ul>
+            <button class="button" id="logout_button" disabled>Disconnect</button>
         </nav>
     </header>
 
     <!-- Main -->
-    <main>
+    <main id="main">
+        <section class="unlogin">
+            <button class="button" id="login_button">Login</button>
+        </section>
 
+        <section class="dashboard">
+
+        </section>
     </main>
 
-    <script src="index.js"></script>
+    <script type="module" src="js/index.js"></script>
 </body>
 </html>
